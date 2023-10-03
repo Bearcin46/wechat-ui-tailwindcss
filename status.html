@@ -7,20 +7,16 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <!--tailwind css-->
     <link rel="stylesheet" href="./assests/css/output.css">
+ 
+    
 </head>
 
 <!--body-->
-<body class="bg-green-300 p-10">
-
-    <!--heading-->
-    <h1 class="font-black text-center mb-5  ">Whatsapp ui Challenge <span style='font-size:20px;'>&#128073;</span> <a href="https://github.com/Bearcin46/wechat-ui-tailwindcss" class="text-red-600">Github </a></h1>
-        
-    
-
+<body class="bg-green-300 p-10 overflow-y-hidden">
 
     <!--upper screen-->
 
-    <section class="bg-white mx-auto max-w-md">
+    <section class="bg-white mx-auto max-w-md relative">
         <div class="bg-emerald-800 text-white px-3 py-5  flex items-center justify-between">
             <div class="flex space-x-2 ">
                 <h4 class="font-semibold ">WeChat</h4><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="fill-current h-6"><path  d="M7 14h6q.425 0 .713-.288T14 13q0-.425-.288-.713T13 12H7q-.425 0-.713.288T6 13q0 .425.288.713T7 14Zm0-3h10q.425 0 .713-.288T18 10q0-.425-.288-.713T17 9H7q-.425 0-.713.288T6 10q0 .425.288.713T7 11Zm0-3h10q.425 0 .713-.288T18 7q0-.425-.288-.713T17 6H7q-.425 0-.713.288T6 7q0 .425.288.713T7 8ZM6 18l-2.3 2.3q-.475.475-1.088.213T2 19.575V4q0-.825.588-1.413T4 2h16q.825 0 1.413.588T22 4v12q0 .825-.588 1.413T20 18H6Zm-2-2h16V4H4v12Zm0 0V4v12Z"/></svg>
@@ -69,7 +65,7 @@
         </ul> 
 
         <!--main body-->
-        <div class="bg-white  p-1 relative">
+        <div class="bg-white  p-1 overscroll-auto overflow-y-auto w-auto lg:h-[560px] md:h-[660px] sm:h-[660px] h-[660px] no-scrollbar">
             <div class="px-3 pb-2 pt-4 flex items-center justify-between space-x-4 ">
                 <img src="./images/mystat.gif"
                  alt="img" 

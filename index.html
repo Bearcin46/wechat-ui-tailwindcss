@@ -7,17 +7,14 @@
         <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <!--tailwind css-->
         <link rel="stylesheet" href="./assests/css/output.css">
+
 </head>
 
 <!--body-->
-<body class="bg-green-300 p-10">
+<body class="bg-green-300 p-10 overflow-y-hidden mb-5">
 
-    <!--app title wechat-->
-        <h1 class="font-black text-center mb-5  ">Whatsapp ui Challenge <span style='font-size:20px;'>&#128073;</span>
-            <a href="https://github.com/Bearcin46/wechat-ui-tailwindcss" class="text-red-600">Github </a>
-        </h1>
 <!--upper screen-->
-    <section class="bg-white mx-auto max-w-md">
+    <section class="bg-white mx-auto max-w-md relative">
         <div class="bg-emerald-800 text-white px-3 py-5  flex items-center justify-between">
             <div class="flex space-x-2 ">
                 <h4 class="font-semibold ">WeChat</h4><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="fill-current h-6"><path  d="M7 14h6q.425 0 .713-.288T14 13q0-.425-.288-.713T13 12H7q-.425 0-.713.288T6 13q0 .425.288.713T7 14Zm0-3h10q.425 0 .713-.288T18 10q0-.425-.288-.713T17 9H7q-.425 0-.713.288T6 10q0 .425.288.713T7 11Zm0-3h10q.425 0 .713-.288T18 7q0-.425-.288-.713T17 6H7q-.425 0-.713.288T6 7q0 .425.288.713T7 8ZM6 18l-2.3 2.3q-.475.475-1.088.213T2 19.575V4q0-.825.588-1.413T4 2h16q.825 0 1.413.588T22 4v12q0 .825-.588 1.413T20 18H6Zm-2-2h16V4H4v12Zm0 0V4v12Z"/></svg>
@@ -61,83 +58,86 @@
             
         </ul> 
      <!-- chat section -->
-     <div class="relative">
+     <div class=" overscroll-auto overflow-y-auto w-auto lg:h-[560px] md:h-[660px] sm:h-[660px] h-[660px] no-scrollbar">
+
         <!-- chat1 -->
-        <div class="hover:bg-slate-300 flex items-center space-x-4 px-3 py-3">
-            <div class="rounded-full border-2 border-emerald-400 p-1">
-                <img src="./images/Screenshot_20230927-165049~2.png" alt="img" class="rounded-full h-21 w-20">
+            <div class="hover:bg-slate-300 flex items-center space-x-4 px-3 py-3">
+                <div class="rounded-full border-2 border-emerald-400 p-1">
+                    <img src="./images/Screenshot_20230927-165049~2.png" alt="img" class="rounded-full h-21 w-20">
+                </div>
+                <div class="flex-1 space-y-0.5">
+                    <h4 class="font-semibold">Bearcin Sweety (You)</h4>
+                    <div class="flex flex-row justify-normal p-0 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="h-6 text-blue-300 fill-blue-400"><path d="m2.394 13.742l4.743 3.62l7.616-8.704l-1.506-1.316l-6.384 7.296l-3.257-2.486zm19.359-5.084l-1.506-1.316l-6.369 7.279l-.753-.602l-1.25 1.562l2.247 1.798z"/></svg>
+                    <p class="text-gray-600">Reminder for meeting</p>
+                </div>
+                </div>
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-slate-400 font-semibold text-sm">Yesterday</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="h-6"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="gray" d="M16 3a1 1 0 0 1 .117 1.993L16 5v4.764l1.894 3.789a1 1 0 0 1 .1.331L18 14v2a1 1 0 0 1-.883.993L17 17h-4v4a1 1 0 0 1-1.993.117L11 21v-4H7a1 1 0 0 1-.993-.883L6 16v-2a1 1 0 0 1 .06-.34l.046-.107L8 9.762V5a1 1 0 0 1-.117-1.993L8 3h8z"/></g></svg>
+                    </span>
+                </div>
             </div>
-            <div class="flex-1 space-y-0.5">
-                <h4 class="font-semibold">Bearcin Sweety (You)</h4>
-                <div class="flex flex-row justify-normal p-0 ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="h-6 text-blue-300 fill-blue-400"><path d="m2.394 13.742l4.743 3.62l7.616-8.704l-1.506-1.316l-6.384 7.296l-3.257-2.486zm19.359-5.084l-1.506-1.316l-6.369 7.279l-.753-.602l-1.25 1.562l2.247 1.798z"/></svg>
-                <p class="text-gray-600">Reminder for meeting</p>
-            </div>
-            </div>
-            <div class="flex flex-col items-center space-y-1">
-                <span class="text-slate-400 font-semibold text-sm">Yesterday</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="h-6"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="gray" d="M16 3a1 1 0 0 1 .117 1.993L16 5v4.764l1.894 3.789a1 1 0 0 1 .1.331L18 14v2a1 1 0 0 1-.883.993L17 17h-4v4a1 1 0 0 1-1.993.117L11 21v-4H7a1 1 0 0 1-.993-.883L6 16v-2a1 1 0 0 1 .06-.34l.046-.107L8 9.762V5a1 1 0 0 1-.117-1.993L8 3h8z"/></g></svg>
-                </span>
-            </div>
-        </div>
 
         <!-- chat2 -->
-        <div class="bg-white hover:bg-slate-300 flex items-center cursor-pointer space-x-4 px-3 py-3">
-                <div class="rounded-full border-2 border-emerald-400 p-1">
-                    <img src="./images/download.jpeg" alt="img" class="rounded-full h-21 w-20">
-                </div>
-                <div class="flex-1">
-                    <h4 class="font-semibold">Inba</h4>
-                    <p class="text-gray-600">Can we have a call? <span >&#128527;</span></p>
-                </div>
-                <div class="flex flex-col items-center space-y-1">
-                    <span class="text-green-600 font-semibold text-sm">10:20AM </span>
-                    <span class="w-6 h-6 bg-emerald-600 flex items-center text-white p-2 rounded-full  font-semibold">1</span>
-                </div>
-        </div>
+            <div class="bg-white hover:bg-slate-300 flex items-center cursor-pointer space-x-4 px-3 py-3">
+                    <div class="rounded-full border-2 border-emerald-400 p-1">
+                        <img src="./images/download.jpeg" alt="img" class="rounded-full h-21 w-20">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold">Inba</h4>
+                        <p class="text-gray-600">Can we have a call? <span >&#128527;</span></p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-1">
+                        <span class="text-green-600 font-semibold text-sm">10:20AM </span>
+                        <span class="w-6 h-6 bg-emerald-600 flex items-center text-white p-2 rounded-full  font-semibold">1</span>
+                    </div>
+            </div>
 
         <!-- chat 3 -->
-        <div class="bg-white hover:bg-slate-300 flex items-center cursor-pointer space-x-4 px-3 py-3">
-                <div class="rounded-full border-2 border-emerald-400 p-1">
-                    <img src="./images/DSC_0611 (1).jpg " alt="img" class=" object-cover rounded-full h-21 w-20">
-                </div>
-                <div class="flex-1">
-                    <h4 class="font-semibold">Brother</h4>
-                    <p class="text-gray-600">I have to go to clg<span>&#128529;</span></p>
-                </div>
-                <div class="flex flex-col items-center space-y-1">
-                    <span class="text-green-600 font-semibold text-sm">8:20AM </span>
-                    <span class="w-6 h-6 bg-emerald-600 flex items-center text-white p-2 rounded-full  font-semibold">1</span>
-                </div>
-        </div>
+            <div class="bg-white hover:bg-slate-300 flex items-center cursor-pointer space-x-4 px-3 py-3">
+                    <div class="rounded-full border-2 border-emerald-400 p-1">
+                        <img src="./images/DSC_0611 (1).jpg " alt="img" class=" object-cover rounded-full h-21 w-20">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold">Brother</h4>
+                        <p class="text-gray-600">I have to go to clg<span>&#128529;</span></p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-1">
+                        <span class="text-green-600 font-semibold text-sm">8:20AM </span>
+                        <span class="w-6 h-6 bg-emerald-600 flex items-center text-white p-2 rounded-full  font-semibold">1</span>
+                    </div>
+            </div>
 
         <!-- chat 4-->
-        <div class="bg-white hover:bg-slate-300 cursor-pointer flex items-center space-x-4 px-3 py-3">
-                <div class="rounded-full border-2 border-emerald-400 p-1">
-                    <img src="./images/Screenshot_20230927-165038~2.png" alt="img" class="rounded-full h-21 w-20">
-                </div>
-                <div class="flex-1">
-                    <h4 class="font-semibold">Full Stack Engineers Cyber...</h4>
-                    <p class="text-gray-600">~ Anbu: Want to snap that..</p>
-                </div>
-                <div class="flex flex-col items-center space-y-1">
-                    <span class="text-green-600 font-semibold text-sm">8:20PM </span>
-                    <span class="w-6 h-6 bg-emerald-600 flex items-center text-white p-2 rounded-full  font-semibold">8</span>
-                </div>
-        </div>
-        <div class="bg-white hover:bg-slate-300 flex cursor-pointer items-center space-x-4 px-3 py-3">
-                <div class="rounded-full border-2 border-emerald-400 p-1">
-                    <img src="./images/Screenshot_20230927-165038~2.png" alt="img" class="rounded-full h-21 w-20">
-                </div>
-                <div class="flex-1">
-                    <h4 class="font-semibold">Cyberdude Interns Volun....</h4>
-                    <p class="text-gray-600">~ Anbu: haha.</p>
-                </div>
-                <div class="flex flex-col items-center space-y-1">
-                    <span class="text-green-600 font-semibold text-sm">7:30PM </span>
-                    <span class="w-6 h-6 bg-emerald-600 flex items-center text-white p-2 rounded-full font-semibold">1</span>
-                </div>
-        </div>
+            <div class="bg-white hover:bg-slate-300 cursor-pointer flex items-center space-x-4 px-3 py-3">
+                    <div class="rounded-full border-2 border-emerald-400 p-1">
+                        <img src="./images/Screenshot_20230927-165038~2.png" alt="img" class="rounded-full h-21 w-20">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold">Full Stack Engineers Cyber...</h4>
+                        <p class="text-gray-600">~ Anbu: Want to snap that..</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-1">
+                        <span class="text-green-600 font-semibold text-sm">8:20PM </span>
+                        <span class="w-6 h-6 bg-emerald-600 flex items-center text-white p-2 rounded-full  font-semibold">8</span>
+                    </div>
+            </div>
+        <!--chat5 -->
+            <div class="bg-white hover:bg-slate-300 flex cursor-pointer items-center space-x-4 px-3 py-3">
+                    <div class="rounded-full border-2 border-emerald-400 p-1">
+                        <img src="./images/Screenshot_20230927-165038~2.png" alt="img" class="rounded-full h-21 w-20">
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold">Cyberdude Interns Volun....</h4>
+                        <p class="text-gray-600">~ Anbu: haha.</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-1">
+                        <span class="text-green-600 font-semibold text-sm">7:30PM </span>
+                        <span class="w-6 h-6 bg-emerald-600 flex items-center text-white p-2 rounded-full font-semibold">1</span>
+                    </div>
+            </div>
+        <!--chat 6-->
         <div class="bg-white hover:bg-slate-300 hover:cursor-pointer flex items-center space-x-4 px-3 py-3">
                 <div class="rounded-full border-2 border-emerald-400 p-1">
                     <img src="https://ui-avatars.com/api/?name=Mom &background=bg-green-300&color=fff " alt="img" class="rounded-full h-21 w-20">
@@ -153,7 +153,7 @@
 
                 <!--floating button 1-->
                 <div 
-                    class="bg-emerald-800  w-12  flex items-center  justify-center h-12  hover:bg-emerald-950 rounded-full absolute bottom-20 right-5 cursor-pointer shadow-xl shadow-gray-800">
+                    class="bg-emerald-800  w-12  flex items-center  justify-center h-12  hover:bg-emerald-950 rounded-full absolute bottom-10 right-5 cursor-pointer shadow-xl shadow-gray-800">
                         <svg xmlns="http://www.w3.org/2000/svg" 
                             width="24" height="24" viewBox="0 0 24 24"      class="text-white fill-current">
                                 <path  d="M20 20H7a2 2 0 0 1-2-2V8.94l-2.77-3.3C2.09 5.47 2 5.24 2 5a1 1 0 0 1 1-1h17a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2M8.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-10m0 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-10m0 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-5Z"/>
