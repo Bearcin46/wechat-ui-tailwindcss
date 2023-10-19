@@ -1,6 +1,6 @@
-# Wechat app ui
+# Wechat ui
 
-[Wechat app ui using HTML and tailwindcss]
+[Instagram ui using HTML and tailwindcss]
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@
 
 ## Description
 
-[This project explains the designing and developing of a wechat app ui with our main frontend tools like HTML and tailwindcss]
+This project explains the designing and developing of a Wechat ui with our main frontend tools like HTML and tailwindcss.
 
 ## Demo
 
@@ -30,23 +30,23 @@ This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.co
 
 ## Technologies Used
 
-[HTML and tailwind css.]
+HTML and tailwind css.
 
 ## Features
 
-- [Clickable links for github and chat ui design]
+- Clickable links for github
 
 ## Installation
 
-[Create a newfolder and open it via VSCode editor. Install the tailwind css as per instructions given in tailwind css official page and then create your index.html and start developing. ]
+Create a newfolder and open it via VSCode editor. Install the tailwind css as per instructions given in tailwind css official page and then create your index.html and start developing.
 
 ## Usage
 
-[Make the setup properly and then have the code, edit the details]
+Make the setup properly and then have the code, edit the details
 
 ## Contributing
 
-[You can add more ui for this.]
+You can add more ui for this.
 
 ## License
 
@@ -54,4 +54,4 @@ This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.co
 
 ## Acknowledgments
 
-## [Thanks for Cyberdude Netwoks for encouraging in making such efforts.]
+## Thanks for Cyberdude Netwoks for encouraging in making such efforts.
